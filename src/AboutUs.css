@@ -1,0 +1,98 @@
+/* Container */
+.about-container {
+  display: flex;
+  height: 100vh;
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRiGuUHFHsj85v_9zAvjcpbE1csWWs806kAB0efEHzQzRgwwdf");
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* Left Section (Image & Text) */
+.about-left {
+  flex: 1;
+  background: url('https://source.unsplash.com/600x800/?grocery,store') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark overlay */
+.about-overlay {
+  text-align: center;
+  color: #2c2c2c;
+ 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Logo */
+.about-logo {
+  width: 70px;
+  margin-bottom: 10px;
+ 
+}
+
+/* Titles */
+.about-title {
+  font-size: 2rem;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: green;
+}
+
+.about-highlight {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(73, 5, 56);
+  font-size: 130%;
+}
+
+/* Right Section (Text & Links) */
+.about-right {
+  flex: 1;
+  background: #c3d3c2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Login & Signup */
+.about-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.about-link {
+  color: darkred;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 112%;
+}
+
+/* Text Content */
+.about-text {
+  max-width: 400px;
+  margin: auto;
+  color:black;
+  
+}
+
+.about-text h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+ 
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}

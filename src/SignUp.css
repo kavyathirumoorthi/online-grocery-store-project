@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  height: 100vh;
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRiGuUHFHsj85v_9zAvjcpbE1csWWs806kAB0efEHzQzRgwwdf") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* === Left Section === */
+ /* Left Section (Welcome) */
+ .left-section {
+  width: 35%;
+  background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRiGuUHFHsj85v_9zAvjcpbE1csWWs806kAB0efEHzQzRgwwdf") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+ 
+  color: brown;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+ border-radius: 400%;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  border-color: #d8a7c0;
+}
+
+p {
+  font-size: 26px;
+  color: black;
+  font-style: oblique;
+}
+
+p1 {
+  font-size: 26px;
+  color: rgb(86, 16, 104);
+  font-style: oblique;
+}
+.about-logo{
+  border-radius: 60%;
+}
+/* === Right Section === */
+.right-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+
+}
+
+
+.right-section label {
+  font-size: 16px;
+  margin-top: 10px;
+  
+}
+
+.input-field {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 40% !important;
+}

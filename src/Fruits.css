@@ -1,0 +1,199 @@
+/* Fruits Page Styling */
+.fruits-container {
+    background-color: lightyellow;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .fruits-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .store-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .cart-icon {
+    font-size: 20px;
+    cursor: pointer;
+    
+     
+  }
+  
+  /* Fruits Banner */
+  /* Ensure the banner image covers full width */
+.banner {
+    position: relative;
+    width: 100%;
+  }
+  
+  .banner-image {
+    width: 100%; /* Makes the image cover the full width */
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover;
+    filter: blur(2px); /* Apply blur effect */
+    /* Ensures the image fills the space without distortion */
+  }
+  
+  /* Center the "FRUITS" text */
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    color:green!important;
+  }
+  
+  /* Products Grid - 3 fruits per row */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Product Cards */
+  .product-card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .product-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .weight-dropdown {
+    width: 70%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .add-button {
+    background-color: purple !important;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    
+  }
+  .add-button:hover {
+    background: darkgreen !important;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+  
+  /* View More Button */
+  .view-more-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-more-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between icons */
+  }
+  
+  .cart-icon, .home-icon {
+    text-decoration: none; /* Removes underline */
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: gray; /* Keep gray background */
+    padding:1px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+   
+  }
+  
+  /* Input Field */
+  .search-box input {
+    background-color: gray !important; /* Ensures gray background stays */
+    color: black !important; /* Text remains black */
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    width: 400px;
+    font-size: 14px;
+  }
+  
+  /* Placeholder Text */
+  .search-box input::placeholder {
+    color: white; /* Placeholder in white */
+    font-style: italic;
+  }
+  
+  /* Prevents background from changing on focus */
+  .search-box input:focus,
+  .search-box input:active,
+  .search-box input:visited {
+    background-color: gray !important;
+    color: whitesmoke!important;
+  }
+  
+  /* Search Button */
+  .search-box button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    width:30%;
+    
+  }
+  
+  /* Search Results */
+  .search-results {
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4;
+    width:15px;
+  }

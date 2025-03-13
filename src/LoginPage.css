@@ -1,0 +1,136 @@
+/* Main Container */
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Section (Welcome) */
+  .left-section {
+    width: 35%;
+    background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRiGuUHFHsj85v_9zAvjcpbE1csWWs806kAB0efEHzQzRgwwdf") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .overlay {
+   
+    color: brown;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+   border-radius: 400%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+    color: rgb(9, 12, 3) !important;
+    font-size: 40%;
+  }
+  
+  .p1 {
+    font-size: 16px;
+    color: rgb(72, 14, 72) !important;
+    font-size: 40%;
+
+  }
+  .about-logo{
+    border-radius: 60%;
+  }
+  
+  /* Right Section (Login Form) */
+  .right-section {
+
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://i.pinimg.com/736x/91/63/5b/91635bfabda162df23cd83605873c42d.jpg");
+  background-size: cover;    
+  }
+  
+  .login-box {
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+    width: 300px;
+    text-align:center;
+    
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    outline: none;
+  }
+  
+  button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 15px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 10px;   
+
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: darkgreen;
+  }
+ /* Ensure the Sign-Up section is properly styled */
+.signup-box {
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  width: 100%; /* Ensures it takes the full width of the login box */
+}
+
+/* Ensure the text size is applied properly */
+.signup-box p {
+  font-size: 14px !important; /* Use !important to override inherited styles */
+  color: #555;
+}
+
+/* Sign-Up button styling */
+.signup-button {
+  display: inline-block;
+  font-size: 14px !important;
+  background-color: green !important;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width:30% !important; /* Adjust this value to make the button larger */
+  padding: 10px; /* Ensures better spacing */
+  transition: 0.3s;
+}
+
+
+/* Hover effect */
+.signup-button:hover {
+  background-color:cornflowerblue !important;
+  color:black; /* Ensure hover color */
+}
