@@ -9,7 +9,6 @@ const LandingPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
-
   const dropdownRef = useRef(null);
 
   const handleSearch = (e) => {
@@ -47,14 +46,6 @@ const LandingPage = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  useEffect(() => {
-    const authStatus = localStorage.getItem("isAuthenticated") === "true";
-    if (!authStatus) {
-      navigate("/login");
-    }
-  }, [navigate]);
-  
-  
 
   return (
     <div className="landing-container">

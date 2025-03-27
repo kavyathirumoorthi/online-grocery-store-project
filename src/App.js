@@ -9,10 +9,9 @@ import Cart from "./Cart";
 import Beverages from "./Beverages";
 import Chocolates from "./Chocolates";
 
-// Check if user is authenticated
+
 const isAuthenticated = () => localStorage.getItem("isAuthenticated") === "true";
 
-// Protected Route Component
 const ProtectedRoute = ({ children }) => {
   return isAuthenticated() ? children : <Navigate to="/login" />;
 };
@@ -20,20 +19,17 @@ const ProtectedRoute = ({ children }) => {
 function App() {
   return (
     <Routes>
-      {/* Landing Page should be accessible to everyone */}
       <Route path="/" element={<LandingPage />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignUp />} />
 
-      {/* Only protect certain routes */}
       <Route path="/fruits" element={<ProtectedRoute><Fruits /></ProtectedRoute>} />
       <Route path="/vegetables" element={<ProtectedRoute><Vegetables /></ProtectedRoute>} />
       <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
       <Route path="/beverages" element={<ProtectedRoute><Beverages /></ProtectedRoute>} />
       <Route path="/chocolate" element={<ProtectedRoute><Chocolates /></ProtectedRoute>} />
 
-      {/* Redirect unknown routes to home */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

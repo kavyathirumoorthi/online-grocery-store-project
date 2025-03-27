@@ -19,7 +19,7 @@ const LoginPage = () => {
     setError("");
   
     try {
-      const response = await axios.post("http://localhost:5005/login", formData);
+      const response = await axios.post("http://localhost:5004/login", formData);
       
       console.log("Login Response:", response.data); // ✅ Debugging response
   

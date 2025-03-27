@@ -1,10 +1,10 @@
 import React from "react";
-import "./AboutUs.css"; // Make sure this file is imported
+import "./AboutUs.css"; 
 
 const AboutUs = () => {
   return (
     <div className="about-container">
-      {/* Left Section with Background */}
+   
       <div className="about-left">
         <div className="about-overlay">
           <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFdHIW7OhZK04eORjrtxwTyncvr9UzSAmwFva0Qcvw4za519Xx" alt="Grocery Logo" className="about-logo" />
@@ -14,7 +14,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Right Section with Text */}
+     
       <div className="about-right">
         <div className="about-links">
           <a href="#login" className="about-link">login</a>

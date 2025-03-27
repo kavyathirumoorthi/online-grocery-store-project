@@ -17,6 +17,9 @@ const Beverages = () => {
       navigate("/vegetables");
     } else if (query === "beverages") {
       navigate("/beverages"); // Navigate to Beverages page
+    } 
+    else if (query === "chocolates") {
+      navigate("/chocolates"); // Navigate to Beverages page
     } else {
       alert("Product not found!");
     }

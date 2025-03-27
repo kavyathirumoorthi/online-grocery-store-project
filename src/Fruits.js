@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai"; 
 import { FaShoppingCart } from "react-icons/fa";
@@ -19,11 +19,23 @@ const Fruits = () => {
       } 
       else if (query === "beverages") {
         navigate("/beverages"); // Navigate to Vegetables page
-      }else {
+      }
+      else if (query === "chocolates") {
+        navigate("/chocolates"); // Navigate to Beverages page
+      } else {
         alert("Product not found!");
       }
     };
-  
+    const addToCart = (product) => {
+      axios.post("http://localhost:5004/add-item", { 
+        name: product.name, 
+        image: product.image, 
+        price: product.price, 
+        quantity: 1 // Default quantity as 1
+      })
+      .then(() => alert(`${product.name} added to cart!`))
+      .catch(error => console.error("Error adding to cart:", error));
+    };
   const products = [
     { name: "Baby Apple Shimla", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-AI1uXb6sHOmrE4_ZkbPkCMA0ONCZdxAnw&s", price: 189, weightOptions: ["1 Kg", "2 Kg", "3 Kg"] },
     { name: "Orange", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa2cYfV0Q7fxNoQpNly2bcCaJUOXnbl73y9A&s", price: 203.83, weightOptions: ["1 Kg", "3 Kg"] },
@@ -96,8 +108,8 @@ const Fruits = () => {
               ))}
             </select>
             <p className="product-price">₹ {product.price}</p>
-            <button className="add-button">Add</button>
-          </div>
+            <button className="add-button" onClick={() => addToCart(product)}>Add</button>
+            </div>
         ))}
       </div>
     </div>

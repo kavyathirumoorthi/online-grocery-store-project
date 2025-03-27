@@ -14,7 +14,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5005/signup", formData);
+      const response = await axios.post("http://localhost:5004/signup", formData);
 
       alert(response.data.message);
       setFormData({ username: "", phone: "", password: "" }); // Reset form after success

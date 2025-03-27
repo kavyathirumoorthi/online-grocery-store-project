@@ -19,8 +19,8 @@ const Chocolate = () => {
        else if (query === "beverages") {
          navigate("/beverages"); // Navigate to Vegetables page
        }
-       else if (query === "chocolate") {
-        navigate("/chocolate"); // Navigate to Vegetables page
+       else if (query === "chocolates") {
+        navigate("/chocolates"); // Navigate to Vegetables page
       }else {
          alert("Product not found!");
        }
